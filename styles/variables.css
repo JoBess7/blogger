@@ -1,0 +1,20 @@
+:root {
+    --color-grey1: rgb(190,190,190);
+    --color-grey2: rgb(169,169,169);
+    --color-grey3: rgb(105,105,105);
+    --color-grey4: rgb(128,128,128);
+    --color-categories: rgb(199,227,244);
+    --color-dark-blue: rgb(74,60,254);
+    --color-burger-gradient: linear-gradient(61deg, rgba(255,255,255,1) 0%, rgba(238,231,231,0.56) 100%, rgba(220,225,230,0.227328431372549) 100%);
+    --color-burger-background: rgb(255,255,255);
+    --color-path: rgb(100,100,100);
+    --color-post-types-template-bottom: rgb(239,241,245);
+    --color-post-types-template-top: rgb(199,227,244);
+    --color-card: rgb(255, 255, 255);
+    --shadow1: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    --text: rgb(14,20,27);
+    --home-top: rgb(199,227,244);
+    --home-bottom: #fff;
+    --default: white;
+    --home-seven: rgb(90,96,114);
+}

@@ -1,0 +1,47 @@
+.postcard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.postcard:hover .postcard-title {
+    color: var(--color-dark-blue);
+}
+
+.postcard:hover .postcard-arrow {
+    opacity: 1;
+    transform: translateX(7px);
+}
+
+.postcard-title-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.postcard-title {
+    font-family: "Wotfard-SemiBold";
+    font-size: 22px;
+    color: var(--text);
+}
+
+.postcard-arrow {
+    fill: var(--color-dark-blue);
+    opacity: 0;
+    transition: opacity 200ms, transform 150ms;
+    transform: translateX(0);
+}
+
+.postcard-description {
+    color: var(--text);
+    font-family: "Wotfard-Regular";
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.postcard-readmore {
+    color: var(--text);
+    font-family: "Wotfard-Medium";
+    font-size: 15px;
+}

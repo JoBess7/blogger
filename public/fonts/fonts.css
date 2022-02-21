@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: "Wotfard-Light";
+    src: url("Wotfard-Light.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Wotfard-Medium";
+    src: url("Wotfard-Medium.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Wotfard-SemiBold";
+    src: url("Wotfard-SemiBold.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Wotfard-Bold";
+    src: url("Wotfard-Bold.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Wotfard-Regular";
+    src: url("Wotfard-Regular.ttf");
+    font-style: normal;
+    font-display: swap;
+}

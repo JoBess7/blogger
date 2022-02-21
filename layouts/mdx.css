@@ -1,0 +1,4 @@
+.blog-content p {
+    color: var(--text);
+    transition: color 200ms;
+}
