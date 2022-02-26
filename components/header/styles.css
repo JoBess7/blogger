@@ -56,17 +56,14 @@ header {
 
 .header-burger-menu {
     display: none;
-    justify-content: center;
     position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: -100vw;
-    opacity: 0;
-    transition: opacity 200ms;
     background: var(--color-burger-background);
     background: var(--color-burger-gradient);
-    
+    align-items: center;
 }
 
 .burger-menu-appear {
@@ -78,12 +75,32 @@ header {
 }
 
 @keyframes burger-menu-disappear {
-    0% {opacity: 1; left: 0;}
+    0% {opacity: .97; left: 0;}
     99% {left: 0;}
     100% {opacity: 0; left: -100vw;}
 }
 
 @keyframes burger-menu-appear {
     0% {opacity: 0; left: 0;}
-    100% {opacity: 1; left: 0;}
+    100% {opacity: .97; left: 0;}
 }
+
+.header-burger-container {
+    display: flex;
+    padding-left: 50px;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.header-burger-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-burger-links a {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: var(--text);
+}
+

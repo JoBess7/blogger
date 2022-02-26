@@ -24,7 +24,3 @@ a {
                 box-shadow 200ms,
                 fill 200ms;
 }
-
-.on-top {
-    z-index: 1000;
-}

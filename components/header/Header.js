@@ -28,7 +28,25 @@ export default function Header() {
         <header>
             <div className={`header-burger-menu ${burgerClasses}`}>
                 <div className="header-burger-container">
+                    <div className="header-burger-links">
+                        <Link href="/posts">
+                            <a className={`h-link burger-link`}>Posts</a>
+                        </Link>
 
+                        <Link href="/latest">
+                            <a className={`h-link burger-link`}>Latest</a>
+                        </Link>
+
+                        <Link href="/goodies">
+                            <a className={`h-link burger-link`}>Goodies</a>
+                        </Link>
+
+                        <a href="https://jobess7.com" className={`h-link burger-link`}>About</a>
+                    </div>
+                    
+                    <div className="header-burger-toggler">
+                        <ThemeToggler/>
+                    </div>
                 </div>
             </div>
 
