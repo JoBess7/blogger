@@ -10,12 +10,10 @@ export default function Blog({ mdxSource, frontMatter }) {
     })
 
     return (
-    <>
         <BlogLayout frontMatter={frontMatter}>
             {content}
         </BlogLayout>
-        
-    </>)
+    )
 }
 
 export async function getStaticPaths() {

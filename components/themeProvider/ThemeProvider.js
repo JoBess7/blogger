@@ -6,7 +6,6 @@ const getInitialColorMode = () => {
 
 const ThemeContext = createContext("light");
 const ThemeProvider = ({ children }) => {
-
     // initial theme
     const [colorMode, rawSetColorMode] = useState(getInitialColorMode);
     const setColorMode = (value) => {

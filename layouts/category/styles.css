@@ -1,0 +1,72 @@
+.category-main-container {
+    width: 100vw;
+    height: 300vh;
+}
+
+.category-header-container {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--color-post-types-template-top);
+}
+
+.category-header-sub-container {
+    box-sizing: border-box;
+    margin: 0 40px 0 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.category-top-container {
+    height: 260px;
+    width: 100%;
+    background-color: var(--color-post-types-template-top);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-top-flex {
+    padding-top: 20px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-top-left-flex > span {
+    font-size: 50px;
+    font-family: "Wotfard-Bold";
+    color: var(--text);
+}
+
+.category-links {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.category-link {
+    font-family: "Wotfard-Light";
+    color: var(--color-path);
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+.category-link-hoverable:hover {
+    color: var(--text);
+}
+
+.category-links-arrow {
+    margin-right: 8px;
+}
+
+.category-top-right-flex {
+    display: flex;
+    flex-direction: column;
+}

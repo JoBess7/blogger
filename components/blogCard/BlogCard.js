@@ -1,10 +1,10 @@
 import Link from "next/link"
 import { BiRightArrowAlt } from "react-icons/bi";
 
-export default function BlogCard({title, publishedAt, summary, slug}) {
+export default function BlogCard({title, publishedAt, summary, category, slug}) {
 
     return (
-        <Link href={"posts/"}>
+        <Link href={`/blog/posts/${category.toLowerCase()}/${slug}`}>
             <a className="postcard">
                 <div className="postcard-title-flex">
                     <span className="postcard-title">{title}</span>

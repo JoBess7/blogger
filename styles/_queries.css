@@ -1,0 +1,14 @@
+@media screen 
+and (max-width: 1000px) {
+    .avatar-container {display: none;}
+}
+
+@media screen
+and (max-width: 800px) {
+    header {z-index: 100;}
+    .header-links {display: none;}
+    .header-right-flex {display: none;}
+    .header-burger {display: flex;}
+    .header-burger-menu {display: flex;}
+    .category-header-sub-container {margin: 0 20px 0 20px;}
+}

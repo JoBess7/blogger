@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import Image from "next/image";
 import Header from "../components/header/Header";
 import { useInView } from "react-intersection-observer";
 import BlogCard from "../components/blogCard/BlogCard";
+import Footer from "../components/footer/Footer";
+import Link from "next/link";
 
 export default function Blog({posts}) {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        // get all categories and remove duplicates
+        setCategories([...new Set(posts.map(post => post.category))]);
+    }, [posts]);
 
     const [currentCharacter, setCurrentCharacter] = useState("characterSmileEyesOpen");
 
@@ -16,7 +25,6 @@ export default function Blog({posts}) {
 
     return (
         <div className="blog-container">
-
             <div ref={avatarRef} className="blog-top-container td">
                 <div className="blog-top-sub-container">
                     <Header/>
@@ -43,9 +51,24 @@ export default function Blog({posts}) {
                             </span>
                             <div className="blog-posts">
                                 {  
-                                    posts.map((frontMatter) => 
+                                    posts.map(frontMatter => 
                                         <BlogCard key={frontMatter.title} {...frontMatter}
                                     />)
+                                }
+                            </div>
+                        </div>
+
+                        <div className="blog-posts-flex">
+                            <span className="blog-title">
+                                Categories
+                            </span>
+                            <div className="blog-categories">
+                                {
+                                    categories.map(category => 
+                                        <Link href={`/blog/posts/${category.toLowerCase()}`} key={category}>
+                                            <a className="blog-category">{category}</a>
+                                        </Link>
+                                    )
                                 }
                             </div>
                         </div>
@@ -53,6 +76,7 @@ export default function Blog({posts}) {
                 </div>
             </div>
 
+            <Footer/>
         </div>
     )
 }

@@ -1,9 +1,37 @@
 import Link from "next/link"
 import ThemeToggler from "./ThemeToggler"
+import { SpinReverse } from "react-burgers";
+import { useContext, useState } from "react";
+import { ThemeContext } from "../themeProvider/ThemeProvider";
 
 export default function Header() {
+
+    const { colorMode } = useContext(ThemeContext);
+
+    const [burgerOpened, setBurgerOpened] = useState(false);
+    const [burgerClasses, setBurgerClasses] = useState("");
+
+    const burgerClickEvent = () => {
+        setBurgerOpened(!burgerOpened);
+
+        if(!burgerOpened) {
+            // remove scroll
+            document.body.style.overflowY = "hidden";
+            setBurgerClasses("burger-menu-appear");
+        } else {
+            document.body.style.overflowY = "scroll";
+            setBurgerClasses("burger-menu-disappear");
+        }
+    };
+
     return (
         <header>
+            <div className={`header-burger-menu ${burgerClasses}`}>
+                <div className="header-burger-container">
+
+                </div>
+            </div>
+
            <div className="header-container">
                <div className="header-left-flex">
                     <Link passHref href={"/"}>
@@ -33,7 +61,18 @@ export default function Header() {
                <div className="header-right-flex">
                     <ThemeToggler/>
                </div>
-            </div> 
+
+               <div onClick={() => burgerClickEvent()} className="header-burger">
+                    <SpinReverse
+                        lineSpacing={6}
+                        width={30}
+                        lineHeight={3}
+                        color={colorMode === "light" ? "black" : "white"}
+                        borderRadius={3}
+                        active={burgerOpened}
+                    />
+               </div>
+            </div>
         </header>
     )
 }

@@ -1,6 +1,5 @@
 .blog-container {
     width: 100vw;
-    height: 300vh;
 }
 
 .blog-top-container {
@@ -15,10 +14,10 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
-    margin: 0 20px 0 20px;
+    margin: 0 40px 0 40px;
     height: 350px;
     width: 100%;
-    max-width: 1020px;
+    max-width: 1000px;
 }
 
 .wave {
@@ -87,23 +86,23 @@
     position: relative;
     background-color: var(--home-bottom);
     align-items: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .blog-bottom-sub-container {
     width: 100%;
-    max-width: 1020px;
+    max-width: 1080px;
     display: flex;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
     justify-content: center;
 }
 
 .blog-grid {
-    margin: 0 45px 0 45px;
+    padding: 0 40px 0 40px;
     width: 100%;
-    box-sizing: border-box;
     display: grid;
-    max-width: 1020px;
-    box-sizing: border-box;
-    margin: 0 35px 0 35px;
     grid-template-columns: 75% 25%;
 }
 
@@ -113,10 +112,11 @@
     font-size: 18px;
     text-transform: uppercase;
     font-family: "Wotfard-Medium";
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .blog-posts-flex {
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -124,4 +124,26 @@
 .blog-posts {
     display: flex;
     flex-direction: column;
+}
+
+.blog-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-category {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px;
+    background-color: var(--color-categories);
+    border-radius: 4px;
+    font-family: "Wotfard-Light";
+    color: black;
+    transition: transform .1s;
+    margin: 0 12px 12px 0;
+    color: var(--text);
+}
+
+.blog-category:hover {
+    transform: scale(1.02);
 }

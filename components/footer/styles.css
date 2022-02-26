@@ -1,0 +1,14 @@
+footer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--home-top);
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+}

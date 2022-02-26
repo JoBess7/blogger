@@ -1,4 +1,4 @@
-import ThemeToggler from "../components/header/ThemeToggler"
+import ThemeToggler from "../../components/header/ThemeToggler"
 
 export default function BlogLayout({frontMatter, children}) {
     return (
