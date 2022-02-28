@@ -11,6 +11,7 @@ import "../styles/variables.css";
 import "../components/header/styles.css";
 import "../components/blogCard/styles.css";
 import "../components/footer/styles.css";
+import "../components/categoryCard/styles.css";
 
 import "../styles/_queries.css";
 

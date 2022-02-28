@@ -24,3 +24,20 @@ a {
                 box-shadow 200ms,
                 fill 200ms;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--home-bottom);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a0a9ac;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    transition: all 150ms;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #828686;
+}

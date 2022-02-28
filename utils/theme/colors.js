@@ -54,7 +54,7 @@ const CSSColors = [
         '--color-post-types-template-top': ['rgb(199,227,244)', 'rgb(14,20,27)']
     },
     {
-        '--color-card': ['rgb(255, 255, 255)', 'rgb(23,32,40)']
+        '--color-card': ['rgb(255, 255, 255)', '#1e262f']
     },
     {
         '--shadow1': ['rgba(0, 0, 0, 0.25) 0px 5px 15px', '0 -2px 10px rgba(0, 0, 0, 1)']

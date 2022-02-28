@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Header from "../../components/header/Header";
 import {MdArrowForwardIos} from "react-icons/md";
+import CategoryCard from "../../components/categoryCard/CategoryCard";
 import { useEffect, useState } from "react";
+import Footer from "../../components/footer/Footer";
 
 export default function BlogCategory({ category, posts }) {
 
@@ -56,10 +58,22 @@ export default function BlogCategory({ category, posts }) {
                         </div>
                     </div>
                     <div className="category-top-right-flex">
-                        <span>{shownPosts.length}</span>
+                        <span>{shownPosts.length} posts</span>
                     </div>
                 </div>
             </div>
+
+            <div className="category-bottom-container td">
+                <div className="category-bottom-sub-container">
+                    {
+                        shownPosts.map(post => 
+                            <CategoryCard key={post.title} category={category} post={post}/>
+                        )
+                    }
+                </div>
+            </div>
+
+            <Footer/>
         </div>
     )
 }

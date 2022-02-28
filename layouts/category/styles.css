@@ -1,11 +1,10 @@
 .category-main-container {
     width: 100vw;
-    height: 300vh;
 }
 
 .category-header-container {
     top: 0;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -21,12 +20,13 @@
 
 
 .category-top-container {
-    height: 260px;
+    height: 250px;
     width: 100%;
     background-color: var(--color-post-types-template-top);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
 
 .category-top-flex {
@@ -36,7 +36,14 @@
     max-width: 1000px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.category-top-right-flex > span {
+    font-family: "Wotfard-Regular";
+    font-size: 20px;
+    color: var(--color-path);
 }
 
 .category-top-left-flex > span {
@@ -69,4 +76,23 @@
 .category-top-right-flex {
     display: flex;
     flex-direction: column;
+}
+
+.category-bottom-container {
+    width: 100%;
+    background-color: var(--color-post-types-template-bottom);
+    display: flex;
+    justify-content: center;
+}
+
+.category-bottom-sub-container {
+    padding: 50px 0 100px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 40px;
 }

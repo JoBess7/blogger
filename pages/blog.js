@@ -58,7 +58,7 @@ export default function Blog({posts}) {
                             </div>
                         </div>
 
-                        <div className="blog-posts-flex">
+                        <div className="blog-posts-categories">
                             <span className="blog-title">
                                 Categories
                             </span>

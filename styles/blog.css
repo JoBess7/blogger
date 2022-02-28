@@ -121,6 +121,11 @@
     flex-direction: column;
 }
 
+.blog-posts-categories {
+    display: flex;
+    flex-direction: column;
+}
+
 .blog-posts {
     display: flex;
     flex-direction: column;

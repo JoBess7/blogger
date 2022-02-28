@@ -1,0 +1,27 @@
+
+.post-types-post {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--color-card);
+    transition: box-shadow 200ms;
+}
+
+.post-types-post:hover {
+    box-shadow: var(--shadow1) !important;
+}
+
+.post-types-post-title {
+    color: var(--text);
+    font-size: 22px;
+    font-family: "Wotfard-SemiBold";
+}
+
+.post-types-post-desc {
+    line-height: 25px;
+    color: var(--text);
+    font-family: "Wotfard-Regular";
+    margin-top: 20px;
+
+}
