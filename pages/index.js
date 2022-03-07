@@ -1,7 +1,15 @@
+import Router from "next/router";
+import { useEffect } from "react"
+
 export default function Home() {
-  return (
-    <div>
-        Home...
-    </div>
-  )
+
+    useEffect(() => {
+        Router.push("/blog");
+    });
+    
+    return (
+        <div>
+            Home...
+        </div>
+    )
 }

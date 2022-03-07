@@ -16,7 +16,7 @@ export default function BlogCategory({ category, posts }) {
         }));
     }, [posts, category]);
 
-    const getAdequateCategory = (cat) => {
+    const getAdequateCategory = cat => {
         switch(cat) {
             case "mongodb":
                 return "MongoDB";
@@ -26,6 +26,8 @@ export default function BlogCategory({ category, posts }) {
                 return "React";
             case "next":
                 return "Next.js";
+            case "animation":
+                return "Animation"
             default:
                 return "Not found";
         }
@@ -58,7 +60,9 @@ export default function BlogCategory({ category, posts }) {
                         </div>
                     </div>
                     <div className="category-top-right-flex">
-                        <span>{shownPosts.length} posts</span>
+                        <span>
+                            {shownPosts.length} post{shownPosts.length === 1 ? <></> : <>s</>}
+                        </span>
                     </div>
                 </div>
             </div>

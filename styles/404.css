@@ -1,0 +1,63 @@
+:root {
+    --cursorX: 0vw;
+    --cursorY: 0vh;
+}
+
+.fof-container {
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+    background-color: rgb(23,32,40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fof-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 11vmax at var(--cursorX) var(--cursorY),
+        rgb(255, 255, 255) 0%,
+        rgba(0,0,0,.1) 3%,
+        rgba(5,5,5,.4) 60%,
+        rgba(0,0,0,.7) 90%,
+        rgba(0,0,0,.9) 100%
+    )
+}
+
+.fof-message {
+    font-family: "Wotfard-Medium";
+    font-size: 100px;
+    color: white;
+}
+
+.fof-flex {
+    padding-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fof-left-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.fof-left-flex button {
+    background: none;
+    border: none;
+    cursor: pointer !important;
+    width: min-content;
+    color: #FFE100;
+    font-size: 40px;
+    font-family: "Wotfard-Medium";
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}

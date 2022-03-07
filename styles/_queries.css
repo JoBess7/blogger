@@ -17,6 +17,11 @@ and (max-width: 800px) {
         row-gap: 15px; grid-template-columns: repeat(1, minmax(0, 1fr));}
 }
 
+@media screen
+and (max-width: 1010px) {
+    .fof-message {font-size: 60px;}
+}
+
 @media screen 
 and (max-width: 650px) {
     .blog-grid {display: flex; flex-direction: column-reverse;}
@@ -24,5 +29,6 @@ and (max-width: 650px) {
     .blog-posts-categories {margin-bottom: 40px;}
     .postcard-description {text-align: justify;}
     .blog-posts-flex {padding-right: 0;}
-
+    .fof-message {font-size: 40px;}
+    .fof-left-flex button {font-size: 22px;}
 }

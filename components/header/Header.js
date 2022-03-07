@@ -33,10 +33,6 @@ export default function Header() {
                             <a className={`h-link burger-link`}>Posts</a>
                         </Link>
 
-                        <Link href="/latest">
-                            <a className={`h-link burger-link`}>Latest</a>
-                        </Link>
-
                         <Link href="/goodies">
                             <a className={`h-link burger-link`}>Goodies</a>
                         </Link>
@@ -62,10 +58,6 @@ export default function Header() {
                     <div className="header-links">
                         <Link href="/blog/posts">
                             <a className="h-link h-link-item">Posts</a>
-                        </Link>
-
-                        <Link href="/blog/latest">
-                            <a className="h-link">Latest</a>
                         </Link>
 
                         <Link href="/blog/goodies">

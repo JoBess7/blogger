@@ -6,6 +6,7 @@ import "../layouts/category/styles.css";
 import "../styles/globals.css";
 import "../styles/blog.css";
 import "../styles/variables.css";
+import "../styles/404.css";
 
 // components
 import "../components/header/styles.css";
@@ -18,6 +19,7 @@ import "../styles/_queries.css";
 import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
 
 function MyApp({ Component, pageProps }) {
+
 	return (
         <ThemeProvider>
             <Component {...pageProps} />
