@@ -58,6 +58,39 @@ const CSSColors = [
     },
     {
         '--shadow1': ['rgba(0, 0, 0, 0.25) 0px 5px 15px', '0 -2px 10px rgba(0, 0, 0, 1)']
+    },
+    {
+        '--color-gray-100:': ['hsl(225deg, 25%, 95%)', 'hsl(210deg, 15%, 20%)'] 
+    },
+    {
+        '--color-gray-200:': ['hsl(225deg, 16%, 90%)', 'hsl(210deg, 15%, 25%)'] 
+    },
+    {
+        '--color-gray-300:': ['hsl(225deg, 8%, 80%)', 'hsl(210deg, 10%, 40%)'] 
+    },
+    {
+        '--color-gray-400:': ['hsl(225deg, 8%, 70%)', 'hsl(210deg, 9%, 45%)'] 
+    },
+    {
+        '--color-gray-500:': ['hsl(225deg, 7%, 60%)', 'hsl(210deg, 8%, 50%)'] 
+    },
+    {
+        '--color-gray-600:': ['hsl(225deg, 15%, 50%)', 'hsl(210deg, 12%, 55%)'] 
+    },
+    {
+        '--color-gray-700:': ['hsl(225deg, 12%, 40%)', 'hsl(210deg, 14%, 66%)'] 
+    },
+    {
+        '--color-gray-900:': ['hsl(225deg, 25%, 20%)', 'hsl(210deg, 25%, 88%)'] 
+    },
+    {
+        '--color-gray-1000:': ['hsl(225deg, 15%, 15%)', 'hsl(210deg, 25%, 96%)'] 
+    },
+    {
+        '--post-bottom': ['#fff', 'rgb(23,32,40)']
+    },
+    {
+        '--post-top': ['rgb(199,227,244)', 'rgb(14,20,27)']
     }
 ];
 

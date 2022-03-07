@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Router from 'next/router';
 import { useEffect } from 'react';
+import Image from "next/image";
 import {BiArrowBack} from "react-icons/bi";
 
 export default function FourOhFour() {
@@ -38,6 +40,9 @@ export default function FourOhFour() {
                         <span className='fof-button-text'>Take me back</span>
                     </button>
                 </div>
+                <div className="fof-avatar-container">
+                    <img alt="" width={400} height={400} src={`/images/characterNervousEyesOpen.svg`}></img>
+                </div> 
             </div>
         </div>
     )

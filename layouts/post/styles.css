@@ -1,0 +1,109 @@
+.blog {
+   width: 100vw;
+}
+
+.blog-header-container {
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.blog-header-sub-container {
+    box-sizing: border-box;
+    margin: 0 40px 0 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.blog-top-container {
+    height: 250px;
+    width: 100%;
+    background-color: var(--post-top) !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.blog-top-flex {
+    padding-top: 20px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.blog-top-right-flex > span {
+    font-family: "Wotfard-Regular";
+    font-size: 20px;
+    color: var(--color-path);
+}
+
+.blog-top-left-flex > span {
+    font-size: 35px;
+    font-family: "Wotfard-Bold";
+    color: var(--text);
+}
+
+.blog-links {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.blog-link {
+    font-family: "Wotfard-Light";
+    color: var(--color-path);
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+.blog-link-hoverable:hover {
+    color: var(--text);
+}
+
+.blog-links-arrow {
+    margin-right: 8px;
+}
+
+.blog-top-right-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content {
+    padding-top: 80px;
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    background-color: var(--post-bottom);
+}
+
+.blog-content-sub {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    box-sizing: border-box;
+    padding: 0 40px 0 40px;
+}
+
+.blog-actual-content {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-table-container {
+    box-sizing: border-box;
+}
+
+.table-of-contents {
+    top: 80px;
+    position: sticky;
+}

@@ -1,5 +1,6 @@
 // layouts components
 import "../layouts/post/mdx.css";
+import "../layouts/post/styles.css";
 import "../layouts/category/styles.css";
 
 // static and containers
@@ -13,6 +14,7 @@ import "../components/header/styles.css";
 import "../components/blogCard/styles.css";
 import "../components/footer/styles.css";
 import "../components/categoryCard/styles.css";
+import "../components/tableOfContents/styles.css";
 
 import "../styles/_queries.css";
 

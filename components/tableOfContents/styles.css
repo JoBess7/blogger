@@ -1,0 +1,45 @@
+.table-of-contents {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-of-contents-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-of-contents-targets {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+}
+
+.table-of-contents-title {
+    padding-top: 16px;
+    font-size: 14px;
+}
+
+.table-of-contents-target {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.table-of-contents-title, .table-of-contents-target {
+    font-family: "Wotfard-Regular";
+    transition: color 110ms;
+    cursor: pointer;
+    color: var(--color-path);
+}
+
+.table-of-contents-title:hover, .table-of-contents-target:hover {
+    color: var(--text);
+}
+
+.table-of-contents > span {
+    color: rgb(243, 56, 112);
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Wotfard-Medium";
+}
