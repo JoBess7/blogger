@@ -100,10 +100,11 @@
 }
 
 .blog-table-container {
-    box-sizing: border-box;
+    max-width: 250px;
 }
 
 .table-of-contents {
+    padding-left: 25px;
     top: 80px;
     position: sticky;
 }

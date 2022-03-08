@@ -1,4 +1,59 @@
-.blog-content p {
+.post-text {
+    font-family: "Wotfard-Regular";
     color: var(--text);
-    transition: color 200ms;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+/* ----------------------------------- */
+
+.post-paragraph {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------- */
+
+.tip {
+    width: 100%;
+    background-color: var(--tip-green-background);
+    border-left: 4px solid var(--tip-green-border);
+    padding: 20px 30px;
+    border-radius: 5px;
+    position: relative;
+    font-family: "Wotfard-Light";
+    color: var(--text);
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.tip i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--post-bottom);
+    top: 0px;
+    transition: background-color 200ms !important;
+    position: absolute;
+    float: left;
+    left: -21px;
+    margin-top: -20px;
+}
+
+.tip-icon {
+    fill: var(--tip-green-icon);
+    position: absolute;
+    left: -15px;
+    top: -13px;
+}
+
+.tip-title {
+    font-family: "Wotfard-Medium";
+    margin-bottom: 5px;
+}
+
+/* ----------------------------------- */
+
+.italic {
+    font-family: "Wotfard-RegularItalic";
 }

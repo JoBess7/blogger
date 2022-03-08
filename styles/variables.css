@@ -28,4 +28,7 @@
     --color-gray-1000: hsl(225deg, 15%, 15%);
     --post-top: rgb(199,227,244);
     --post-bottom: #fff;
+    --tip-green-background: rgba(191, 252, 191, 0.589);
+    --tip-green-border: rgb(112, 228, 112);
+    --tip-green-icon: rgb(55, 168, 55);
 }

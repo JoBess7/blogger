@@ -1,7 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import Router from 'next/router';
 import { useEffect } from 'react';
-import Image from "next/image";
 import {BiArrowBack} from "react-icons/bi";
 
 export default function FourOhFour() {

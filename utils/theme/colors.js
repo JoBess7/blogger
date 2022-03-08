@@ -91,6 +91,12 @@ const CSSColors = [
     },
     {
         '--post-top': ['rgb(199,227,244)', 'rgb(14,20,27)']
+    },
+    {
+        '--tip-green-background': ['rgba(191, 252, 191, 0.589)', 'rgba(46, 121, 86, 0.397)']
+    },
+    {
+        '--tip-green-icon': ['rgb(55, 168, 55)', 'rgb(112, 228, 112)']
     }
 ];
 
