@@ -1,6 +1,4 @@
-import { useEffect } from "react"
 import Header from "../../components/header/Header"
-import ThemeToggler from "../../components/header/ThemeToggler"
 import TableOfContents from "../../components/tableOfContents/TableOfContents"
 import {MdArrowForwardIos} from "react-icons/md";
 import Link from "next/link";
