@@ -4,6 +4,7 @@ import {MdArrowForwardIos} from "react-icons/md";
 import Link from "next/link";
 
 export default function BlogLayout({frontMatter, children}) {
+
     return (
         <div className="blog">
             <div className="blog-top-container td">

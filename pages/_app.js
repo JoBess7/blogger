@@ -21,7 +21,7 @@ import "../styles/_queries.css";
 import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
 
 function MyApp({ Component, pageProps }) {
-
+    
 	return (
         <ThemeProvider>
             <Component {...pageProps} />

@@ -97,6 +97,9 @@ const CSSColors = [
     },
     {
         '--tip-green-icon': ['rgb(55, 168, 55)', 'rgb(112, 228, 112)']
+    },
+    {
+        '--tip-blue-background': ['rgba(188, 224, 253, 0.541)', 'rgba(35, 76, 110, 0.404)']
     }
 ];
 

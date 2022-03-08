@@ -14,7 +14,7 @@
 
 /* ----------------------------------- */
 
-.tip {
+.tip-green {
     width: 100%;
     background-color: var(--tip-green-background);
     border-left: 4px solid var(--tip-green-border);
@@ -27,7 +27,7 @@
     font-size: 17px;
 }
 
-.tip i {
+.tip-green i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -40,7 +40,7 @@
     margin-top: -20px;
 }
 
-.tip-icon {
+.tip-icon-green {
     fill: var(--tip-green-icon);
     position: absolute;
     left: -15px;
@@ -54,6 +54,47 @@
 
 /* ----------------------------------- */
 
+.tip-blue {
+    width: 100%;
+    background-color: var(--tip-blue-background);
+    border-left: 4px solid var(--color-dark-blue);
+    padding: 20px 30px;
+    border-radius: 5px;
+    position: relative;
+    font-family: "Wotfard-Light";
+    color: var(--text);
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.tip-blue i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--post-bottom);
+    top: 0px;
+    transition: background-color 200ms !important;
+    position: absolute;
+    float: left;
+    left: -21px;
+    margin-top: -20px;
+}
+
+.tip-icon-blue {
+    fill: var(--color-dark-blue);
+    position: absolute;
+    left: -18px;
+    top: -14px;
+}
+
+/* ----------------------------------- */
+
 .italic {
     font-family: "Wotfard-RegularItalic";
+}
+
+/* ---------------------------------- */
+
+pre {
+    border-radius: 5px;
 }

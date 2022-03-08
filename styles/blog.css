@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    background-color: var(--home-top);
+    background-color: var(--home-top) !important;
 }
 
 .blog-top-sub-container {
@@ -58,7 +58,7 @@
     pointer-events: all;
     position: absolute;
     right: 25%;
-    bottom: 10%;
+    bottom: -3%;
     transform: translateY(300px);
 }
 
