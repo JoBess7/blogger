@@ -29,11 +29,11 @@ export default function Header() {
             <div className={`header-burger-menu ${burgerClasses}`}>
                 <div className="header-burger-container">
                     <div className="header-burger-links">
-                        <Link href="/posts">
+                        <Link href="/blog/posts">
                             <a className={`h-link burger-link`}>Posts</a>
                         </Link>
 
-                        <Link href="/goodies">
+                        <Link href="/blog/goodies">
                             <a className={`h-link burger-link`}>Goodies</a>
                         </Link>
 
