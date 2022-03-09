@@ -87,7 +87,7 @@ const CSSColors = [
         '--color-gray-1000:': ['hsl(225deg, 15%, 15%)', 'hsl(210deg, 25%, 96%)'] 
     },
     {
-        '--post-bottom': ['#fff', 'rgb(23,32,40)']
+        '--post-bottom': ['#fff', 'rgb(14,20,27)']
     },
     {
         '--post-top': ['rgb(199,227,244)', 'rgb(14,20,27)']
@@ -100,7 +100,103 @@ const CSSColors = [
     },
     {
         '--tip-blue-background': ['rgba(188, 224, 253, 0.541)', 'rgba(35, 76, 110, 0.404)']
-    }
+    },
+    {
+        '--prism-base': ['#25414e', '#f8f8f2']
+    },
+    {
+        '--prism-background': ['#f6f3f3', '#172028']
+    },
+    {
+        '--prism-comment': ['#aabfc9', '#8292a2']
+    },
+    {
+        '--prism-prolog': ['#aabfc9', '#8292a2']
+    },
+    {
+        '--prism-doctype': ['#aabfc9', '#8292a2']
+    },
+    {
+        '--prism-cdata': ['#39adb5', '#8292a2']
+    },
+    {
+        '--prism-punctuation': ['#39adb5', '#f8f8f2']
+    },
+    {
+        '--prism-namespace': ['#90a4ae', '#f8f8f2']
+    },
+    {
+        '--prism-property': ['#0eb6c2', '#f92672']
+    },
+    {
+        '--prism-tag': ['#e53935', '#ee5f93']
+    },
+    {
+        '--prism-constant': ['#7c4dff', '#f92672']
+    },
+    {
+        '--prism-symbol': ['#7c4dff', '#f92672']
+    },
+    {
+        '--prism-deleted': ['#e53935', '#f92672']
+    },
+    {
+        '--prism-boolean': ['#7c4dff', '#f92672']
+    },
+    {
+        '--prism-number': ['#f76d47', '#ae81ff']
+    },
+    {
+        '--prism-selector': ['#17242c', '#a6e22e']
+    },
+    {
+        '--prism-attr-name': ['#1950c2', '#a6e22e']
+    },
+    {
+        '--prism-string': ['#474545', '#e6db74']
+    },
+    {
+        '--prism-char': ['#39adb5', '#a6e22e']
+    },
+    {
+        '--prism-builtin': ['#39adb5', '#a6e22e']
+    },
+    {
+        '--prism-inserted': ['#39adb5', '#a6e22e']
+    },
+    {
+        '--prism-operator': ['#39adb5', '#f8f8f2']
+    },
+    {
+        '--prism-entity': ['#393566', '#f8f8f2']
+    },
+    {
+        '--prism-url': ['#e53935', '#f8f8f2']
+    },
+    {
+        '--prism-variable': ['#e53935', '#fd971f']
+    },
+    {
+        '--prism-atrule': ['#7c4dff', '#e6db74']
+    },
+    {
+        '--prism-attr-value': ['#3c77b1', '#e6db74']
+    },
+    {
+        '--prism-function': ['#ff7c4d', '#e6db74']
+    },
+    {
+        '--prism-class-name': ['#ca3253', '#e46e86']
+    },
+    {
+        '--prism-keyword': ['#0a14f5', '#66d9ef']
+    },
+    {
+        '--prism-regex': ['#6182b8', '#e90']
+    },
+    {
+        '--prism-important': ['#7c4dff', '#fd971f']
+    },
 ];
 
 export {constCSSValues, CSSColors};

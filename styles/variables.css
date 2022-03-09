@@ -32,4 +32,39 @@
     --tip-green-border: rgb(112, 228, 112);
     --tip-green-icon: rgb(55, 168, 55);
     --tip-blue-background: rgba(188, 224, 253, 0.541);
+
+    --prism-base: #25414e;
+    --prism-background: #f6f3f3;
+    --prism-comment: #aabfc9;
+    --prism-prolog: #aabfc9;
+    --prism-doctype: #aabfc9;
+    --prism-cdata: #39adb5;
+    --prism-punctuation: #39adb5;
+    --prism-namespace: #90a4ae;
+    --prism-property:#0eb6c2;
+    --prism-tag: #e53935;
+    --prism-constant: #7c4dff;
+    --prism-symbol: #7c4dff;
+    --prism-deleted: #e53935;
+    --prism-boolean: #7c4dff;
+    --prism-number: #f76d47;
+    --prism-selector: #17242c;
+    --prism-attr-name:#1950c2;
+    --prism-string: #474545;
+    --prism-char: #39adb5;
+    --prism-builtin: #39adb5;
+    --prism-inserted: #39adb5;
+    --prism-operator: #39adb5;
+    --prism-entity: #393566;
+    --prism-url: #e53935;
+    --prism-string:#474545;
+    --prism-variable: #e53935;
+    --prism-atrule: #7c4dff;
+    --prism-attr-value: #3c77b1;
+    --prism-function: #ff7c4d;
+    --prism-class-name: #ca3253;
+    --prism-keyword:#0a14f5;
+    --prism-regex: #6182b8;
+    --prism-important:#7c4dff;
+    
 }

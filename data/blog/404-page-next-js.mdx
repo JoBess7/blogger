@@ -24,12 +24,15 @@ The feeling can be quite annoying, but if users will land there anyway, why not 
     under the <it>pages</it> folder and customize it all you want.
 </TipBlue>
 
-<Prism type="language-jsx">
-  {`    // here
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            Prism.highlightAll();
-        }
-    });
-`}
-</Prism>
+<JavaScript>
+{`import "../styles/_queries.css";
+import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
+import { useContext } from "react";
+import { ThemeContext } from "@emotion/react";\n
+function MyApp({ Component, pageProps }) {
+	return (
+        <ThemeProvider>
+            <Component {...pageProps} />
+        </ThemeProvider>
+)}`}
+</JavaScript>

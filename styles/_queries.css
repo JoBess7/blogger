@@ -27,6 +27,7 @@ and (max-width: 1010px) {
 
 @media screen 
 and (max-width: 650px) {
+    
     .blog-top-left-flex > span {font-size: 30px;}
     .blog-content-sub {padding: 0 30px;}
     .blog-grid {display: flex; flex-direction: column-reverse;}

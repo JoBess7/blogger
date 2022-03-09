@@ -1,12 +1,8 @@
-import NextLink from "next/link";
 import { BsCheckCircle } from "react-icons/bs";
 import { IoMdInformationCircleOutline } from "react-icons/io";
-import Prism from "prismjs";
-require('prismjs/components/prism-javascript')
-require('prismjs/components/prism-css')
-require('prismjs/components/prism-jsx')
-import "prismjs/themes/prism-tomorrow.css";
-import PrismBlock from "./prism/Prism";
+import JavaScript from "./prism/JavaScript";
+import CSS from "./prism/CSS";
+import HTML from "./prism/HTML";
 
 const PostParagraph = ({ children }) => {
     return (
@@ -48,7 +44,9 @@ const MDXComponents = {
     TipGreen: props => <TipGreen {...props}></TipGreen>,
     TipBlue: props => <TipBlue {...props}></TipBlue>,
     it: props => <span className="italic" {...props}></span>,
-    Prism: props => <PrismBlock {...props}></PrismBlock>
+    JavaScript: props => <JavaScript {...props}></JavaScript>,
+    CSS: props => <CSS {...props}></CSS>,
+    HTML: props => <HTML {...props}></HTML>,
 }
 
 export default MDXComponents

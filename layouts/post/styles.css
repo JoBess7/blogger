@@ -94,17 +94,18 @@
 }
 
 .blog-actual-content {
+    max-width: 800px;
+    width: 100%;
     padding-right: 50px;
     display: flex;
     flex-direction: column;
 }
 
 .blog-table-container {
-    max-width: 250px;
+
 }
 
 .table-of-contents {
-    padding-left: 25px;
     top: 80px;
     position: sticky;
 }
