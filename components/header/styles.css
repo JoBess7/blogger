@@ -57,7 +57,7 @@ header {
 .header-burger-menu {
     display: none;
     position: fixed;
-    height: 100vh;
+    height: 100vh !important;
     width: 100vw;
     top: 0;
     left: -100vw;

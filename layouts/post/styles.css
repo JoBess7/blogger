@@ -9,6 +9,8 @@
     justify-content: center;
     width: 100vw;
     position: fixed;
+    background-color: var(--post-top);
+    z-index: 100;
 }
 
 .blog-header-sub-container {
@@ -78,6 +80,7 @@
 }
 
 .blog-content {
+    overflow-x: hidden;
     padding-top: 80px;
     width: 100vw; 
     display: flex;
