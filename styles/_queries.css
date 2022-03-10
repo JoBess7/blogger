@@ -5,6 +5,7 @@ and (max-width: 1000px) {
 
 @media screen
 and (max-width: 800px) {
+    .fof-avatar-container {display: none;}
     header {z-index: 100;}
     .header-links {display: none;}
     .header-right-flex {display: none;}

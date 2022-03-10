@@ -1,6 +1,7 @@
 import Router from 'next/router';
 import { useEffect } from 'react';
 import {BiArrowBack} from "react-icons/bi";
+import Image from "next/image";
 
 export default function FourOhFour() {
 
@@ -39,7 +40,7 @@ export default function FourOhFour() {
                     </button>
                 </div>
                 <div className="fof-avatar-container">
-                    <img alt="" width={400} height={400} src={`/images/characterNervousEyesOpen.svg`}></img>
+                    <Image alt="avatar" width={400} height={400} src={`/images/characterNervousEyesOpen.svg`}></Image>
                 </div> 
             </div>
         </div>
