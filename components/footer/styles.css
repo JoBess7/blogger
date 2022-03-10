@@ -1,14 +1,16 @@
 footer {
     width: 100vw;
-    height: 200px;
+    height: 400px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: var(--home-top);
+    flex-direction: column;
 }
 
-.footer-container {
+.footer-container-top, .footer-container-bottom {
     width: 100%;
     max-width: 1000px;
+    height: 200px;
     margin: 0 40px 0 40px;
     box-sizing: border-box;
 }

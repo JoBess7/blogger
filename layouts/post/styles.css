@@ -21,7 +21,7 @@
 }
 
 .blog-layout-top-container {
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-color: var(--post-bottom);
     display: flex;
@@ -31,8 +31,7 @@
 }
 
 .blog-layout-top-flex {
-    padding-top: 20px;
-    margin: 0 40px 0 40px;
+    margin: 0px 40px 0 40px;
     box-sizing: border-box;
     max-width: 1000px;
     width: 100%;
@@ -42,15 +41,9 @@
 }
 
 .blog-layout-top-left-flex > span {
-    font-size: 35px;
-    font-family: "Wotfard-Bold";
+    font-size: 40px;
+    font-family: "Wotfard-Medium";
     color: var(--text);
-}
-
-.blog-layout-date {
-    font-family: "Wotfard-Regular";
-    color: var(--text-gray);
-    margin-bottom: 10px;
 }
 
 .blog-layout-top-right-flex {
@@ -86,4 +79,19 @@
 .table-of-contents {
     top: 150px;
     position: sticky;
+}
+
+.blog-layout-title-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.blog-layout-title-info > svg {
+    margin-right: 10px;
+}
+
+.blog-layout-date, .blog-layout-read-time{
+    font-family: "Wotfard-Regular";
+    color: var(--text-gray);
 }
