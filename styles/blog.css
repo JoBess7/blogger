@@ -58,7 +58,7 @@
     pointer-events: all;
     position: absolute;
     right: 25%;
-    bottom: -3%;
+    bottom: 10%;
     transform: translateY(300px);
 }
 
@@ -139,11 +139,12 @@
 .blog-category {
     cursor: pointer;
     font-size: 15px;
-    padding: 7px;
+    padding: 10px 10px 8px 10px;
     background-color: var(--color-categories);
     border-radius: 4px;
-    font-family: "Wotfard-Light";
+    font-family: "Wotfard-Regular";
     color: black;
+    font-size: 16px;
     transition: transform .1s;
     margin: 0 12px 12px 0;
     color: var(--text);

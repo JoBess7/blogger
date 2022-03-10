@@ -22,13 +22,8 @@ import "../components/tableOfContents/styles.css";
 import "../styles/_queries.css";
 
 import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-
-    useEffect(() => {
-        document.body.style.zoom = "110%";
-    }, []);
 
 	return (
         <ThemeProvider>

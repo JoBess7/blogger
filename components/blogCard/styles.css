@@ -22,7 +22,7 @@
 
 .postcard-title {
     font-family: "Wotfard-SemiBold";
-    font-size: 22px;
+    font-size: 23px;
     color: var(--text);
 }
 
@@ -36,12 +36,6 @@
 .postcard-description {
     color: var(--text);
     font-family: "Wotfard-Regular";
-    font-size: 15px;
+    font-size: 17px;
     line-height: 27px;
-}
-
-.postcard-readmore {
-    color: var(--text);
-    font-family: "Wotfard-Medium";
-    font-size: 15px;
 }

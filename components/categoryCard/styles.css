@@ -14,13 +14,14 @@
 
 .post-types-post-title {
     color: var(--text);
-    font-size: 22px;
+    font-size: 23px;
     font-family: "Wotfard-SemiBold";
 }
 
 .post-types-post-desc {
     line-height: 25px;
     color: var(--text);
+    font-size: 17px;
     font-family: "Wotfard-Regular";
     margin-top: 20px;
 }

@@ -1,45 +1,34 @@
 import Header from "../../components/header/Header"
 import TableOfContents from "../../components/tableOfContents/TableOfContents"
-import {MdArrowForwardIos} from "react-icons/md";
-import Link from "next/link";
+import { getFormattedDate } from "../../utils/date/date";
 
 export default function BlogLayout({frontMatter, children}) {
     console.log(frontMatter);
     return (
-        <div className="blog">
-            <div className="blog-top-container td">
-                <div className="blog-header-container td">
-                    <div className="blog-header-sub-container">
+        <div className="blog-layout">
+            <div className="blog-layout-top-container td">
+                <div className="blog-layout-header-container td">
+                    <div className="blog-layout-header-sub-container">
                         <Header/>
                     </div>
                 </div>
 
-                <div className="blog-top-flex">
-                    <div className="blog-top-left-flex">
-                        <span>{frontMatter.title}</span>
-                        <div className="blog-links">
-                            <Link href="/blog">
-                                <a className="td blog-link-hoverable blog-link">Blog</a>
-                            </Link>
-                            <MdArrowForwardIos className="blog-links-arrow" size={15} color="grey"/>
-                            <Link href="/blog/posts">
-                                <a className="td blog-link-hoverable blog-link">Posts</a>
-                            </Link>
-                            <MdArrowForwardIos className="blog-links-arrow" size={15} color="grey"/>
-                            <Link href={`/blog/posts/${frontMatter.category.toLowerCase()}`}>
-                                <a className="td blog-link-hoverable blog-link">{frontMatter.category}</a>
-                            </Link>
+                <div className="blog-layout-top-flex">
+                    <div className="blog-layout-top-left-flex">
+                        <div className="blog-layout-date">
+                            {getFormattedDate(frontMatter.publishedAt)} &#183; {frontMatter.category}
                         </div>
+                        <span>{frontMatter.title}</span>
                     </div>
                 </div>
             </div>
 
-            <div className="blog-content td">
-                <div className="blog-content-sub">
-                    <div className="blog-actual-content">
+            <div className="blog-layout-content td">
+                <div className="blog-layout-content-sub">
+                    <div className="blog-layout-actual-content">
                         {children}
                     </div>
-                    <div className="blog-table-container">
+                    <div className="blog-layout-table-container">
                         <TableOfContents content={frontMatter.tableOfContents}/>
                     </div>
                 </div>
