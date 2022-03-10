@@ -1,0 +1,42 @@
+---
+title: "Test post"
+publishedAt: "2021-03-22"
+summary: "Qui drumstick esse alcatra incididunt shankle in laboris tempor. Velit laborum pork belly boudin frankfurter aliqua consequat filet mignon. Ex aute mollit, tenderloin incididunt brisket do fatback boudin. Beef ribs strip steak consequat, pork loin boudin pork chop sint est."
+category: "CSS"
+subcategories: []
+tableOfContents:
+  Content top:
+    - targets:
+        CT1: id1
+        CT2: id2
+  Content mid:
+    - targets:
+        CM1: id3
+        CM2: id4
+  Content bottom:
+    - targets:
+        CB1: id5
+        CB2: id6
+---
+
+You've most likely experienced this before: you click on a link, and Boom! 404, page not found!
+The feeling can be quite annoying, but if users will land there anyway, why not make the most of it?
+
+<TipGreen title="404 page with Next.js">
+    This website is built with Next.js. If you're using it too,
+    you can simply create a new file called<it> _error.js </it>
+    under the <it>pages</it> folder and customize it all you want.
+</TipGreen>
+
+<JavaScript>
+{`import "../styles/_queries.css";
+import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
+import { useContext } from "react";
+import { ThemeContext } from "@emotion/react";\n
+function MyApp({ Component, pageProps }) {
+	return (
+        <ThemeProvider>
+            <Component {...pageProps} />
+        </ThemeProvider>
+)}`}
+</JavaScript>

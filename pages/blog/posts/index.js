@@ -33,7 +33,10 @@ export default function BlogCategory({ posts }) {
                         </div>
                     </div>
                     <div className="category-top-right-flex">
-                        <span>{posts.length} posts</span>
+                        <span>
+                            {posts.length} post{posts.length === 1 ? <></> : <>s</>}
+                        </span>
+                        
                     </div>
                 </div>
             </div>

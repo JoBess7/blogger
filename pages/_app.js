@@ -1,16 +1,18 @@
-// layouts components
-import "../layouts/post/mdx.css";
+// layouts
 import "../layouts/post/styles.css";
 import "../layouts/category/styles.css";
+import "../layouts/goody/styles.css";
 
 // static and containers
 import "../styles/globals.css";
 import "../styles/blog.css";
 import "../styles/variables.css";
 import "../styles/404.css";
-import "../styles/prism.css";
+import "../styles/goodies.css";
 
 // components
+import "../components/MDX/styles.css";
+import "../components/prism/prism.css";
 import "../components/header/styles.css";
 import "../components/blogCard/styles.css";
 import "../components/footer/styles.css";

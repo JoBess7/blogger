@@ -1,0 +1,60 @@
+.goody-main-container {
+    width: 100vw;
+}
+
+.goody-header-container {
+    top: 0;
+    position: absolute;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--home-bottom);
+}
+
+.goody-header-sub-container {
+    box-sizing: border-box;
+    margin: 0 40px 0 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.goody-top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.goody-bottom-container {
+    width: 100%;
+    background-color: var(--home-bottom);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 250px);
+}
+
+.goody-bottom-sub-container {
+    width: 100%;
+    height: min-content;
+    max-width: 1000px;
+    padding: 70px 100px 100px 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.goody-actual-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.goody-bottom-sub-container > span {
+    width: 100%;
+    text-align: center;
+    font-family: "Wotfard-Medium";
+    margin-bottom: 50px;
+    color: var(--text);
+    font-size: 50px;
+}

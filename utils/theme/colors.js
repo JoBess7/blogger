@@ -197,6 +197,12 @@ const CSSColors = [
     {
         '--prism-important': ['#7c4dff', '#fd971f']
     },
+    {
+        '--text-gray': ['rgb(100, 100, 87)', 'rgb(189, 189, 189)']
+    },
+    {
+        '--shadow-light-mode': ['rgba(149, 157, 165, 0.2) 0px 8px 24px', 'rgba(1,1,1,0)']
+    }
 ];
 
 export {constCSSValues, CSSColors};

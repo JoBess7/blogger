@@ -1,0 +1,139 @@
+.goodies-main-container {
+    width: 100vw;
+}
+
+.goodies-header-container {
+    top: 0;
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--color-post-types-template-top);
+}
+
+.goodies-header-sub-container {
+    box-sizing: border-box;
+    margin: 0 40px 0 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.goodies-top-container {
+    height: 250px;
+    width: 100%;
+    background-color: var(--color-post-types-template-top);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.goodies-top-flex {
+    padding-top: 20px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.goodies-top-right-flex > span {
+    font-family: "Wotfard-Regular";
+    font-size: 20px;
+    color: var(--color-path);
+}
+
+.goodies-top-left-flex > span {
+    font-size: 50px;
+    font-family: "Wotfard-Bold";
+    color: var(--text);
+}
+
+.goodies-description {
+    margin-top: 10px;
+    font-family: "Wotfard-Regular";
+    color: var(--text-gray);
+}
+
+.goodies-link {
+    font-family: "Wotfard-Light";
+    color: var(--color-path);
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+.goodies-link-hoverable:hover {
+    color: var(--text);
+}
+
+.goodies-links-arrow {
+    margin-right: 8px;
+}
+
+.goodies-top-right-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.goodies-bottom-container {
+    width: 100%;
+    background-color: var(--color-post-types-template-bottom);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 250px);
+}
+
+.goodies-bottom-sub-container {
+    padding: 50px 0 100px 0;
+    width: 100%;
+    height: min-content;
+    max-width: 1000px;
+    margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.goody-card {
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--color-card);
+    padding: 15px;
+    box-shadow: var(--shadow-light-mode);
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.goody-card:hover {
+    transform: scale(1.008);
+}
+
+.goody-title-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goody-title {
+    color: var(--text);
+    font-family: "Wotfard-Medium";
+    font-size: 20px;
+}
+
+.goody-published {
+    color: var(--text-gray);
+    font-family: "Wotfard-Light";
+    font-size: 13px;
+}
+
+.goody-description {
+    font-family: "Wotfard-Regular";
+    color: var(--text-gray);
+    padding-top: 10px;
+}

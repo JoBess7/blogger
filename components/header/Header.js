@@ -33,7 +33,7 @@ export default function Header() {
                             <a className={`h-link burger-link`}>Posts</a>
                         </Link>
 
-                        <Link href="/blog/goodies">
+                        <Link href="/goodies">
                             <a className={`h-link burger-link`}>Goodies</a>
                         </Link>
 
@@ -60,7 +60,7 @@ export default function Header() {
                             <a className="h-link h-link-item">Posts</a>
                         </Link>
 
-                        <Link href="/blog/goodies">
+                        <Link href="/goodies">
                             <a className="h-link">Goodies</a>
                         </Link>
 

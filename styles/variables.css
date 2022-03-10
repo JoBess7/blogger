@@ -1,4 +1,5 @@
 :root {
+    --text-gray: rgb(100, 100, 87);
     --color-grey1: rgb(190,190,190);
     --color-grey2: rgb(169,169,169);
     --color-grey3: rgb(105,105,105);
@@ -32,6 +33,7 @@
     --tip-green-border: rgb(112, 228, 112);
     --tip-green-icon: rgb(55, 168, 55);
     --tip-blue-background: rgba(188, 224, 253, 0.541);
+    --shadow-light-mode: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     --prism-base: #25414e;
     --prism-background: #f6f3f3;

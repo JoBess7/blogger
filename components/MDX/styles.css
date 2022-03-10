@@ -25,6 +25,7 @@
     color: var(--text);
     line-height: 25px;
     font-size: 17px;
+    margin-bottom: 40px
 }
 
 .tip-green i {
@@ -95,3 +96,32 @@
 }
 
 /* ---------------------------------- */
+
+.lk {
+    position: relative;
+    color: var(--text);
+}
+
+.lk:hover .lk-border {
+    height: 90%;
+    background-color:rgba(238, 82, 129, 0.3);
+}
+
+.lk-border {
+    transition: height .08s ease-out, background-color .1s ease-in;
+    pointer-events: none;
+    position: absolute;
+    left: -1px;
+    width: calc(100% + 2px);
+    bottom: 1px;
+    height: 3px;
+    border-radius: 1px;
+    background-color:rgba(255, 0, 76, 0.6);
+}
+
+/* ---------------------------------- */
+
+.solo-image {
+    height: 400px;
+    position: relative;
+}

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getAllFilesFrontMatter } from "../lib/mdx";
+import { getAllFilesFrontMatter } from "../../lib/mdx";
 import Image from "next/image";
-import Header from "../components/header/Header";
+import Header from "../../components/header/Header";
 import { useInView } from "react-intersection-observer";
-import BlogCard from "../components/blogCard/BlogCard";
-import Footer from "../components/footer/Footer";
+import BlogCard from "../../components/blogCard/BlogCard";
+import Footer from "../../components/footer/Footer";
 import Link from "next/link";
 
 export default function Blog({posts}) {
