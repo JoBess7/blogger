@@ -1,14 +1,11 @@
 import Link from "next/link";
 import {MdArrowForwardIos} from "react-icons/md";
 import CategoryCard from "../../../components/categoryCard/CategoryCard";
-import { useEffect, useState } from "react";
 import Footer from "../../../components/footer/Footer";
 import Header from "../../../components/header/Header";
 import { getAllFilesFrontMatter } from "../../../lib/mdx";
 
 export default function BlogCategory({ posts }) {
-
-    const [shownPosts, setShownPosts] = useState([]);
 
     return (
         <div className="category-main-container">

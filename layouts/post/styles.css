@@ -84,11 +84,17 @@
 .blog-layout-title-info {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.blog-layout-title-info:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .blog-layout-title-info > svg {
     margin-right: 10px;
+    fill: var(--text);
 }
 
 .blog-layout-date, .blog-layout-read-time{

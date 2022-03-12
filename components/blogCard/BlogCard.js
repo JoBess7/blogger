@@ -1,7 +1,9 @@
 import Link from "next/link"
 import { BiRightArrowAlt } from "react-icons/bi";
 
-export default function BlogCard({title, publishedAt, summary, category, slug}) {
+export default function BlogCard({ frontMatter }) {
+
+    const {title, publishedAt, summary, category, slug} = frontMatter;
 
     return (
         <Link href={`/blog/posts/${category.toLowerCase()}/${slug}`}>

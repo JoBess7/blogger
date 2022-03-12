@@ -7,7 +7,7 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import Footer from "../../components/footer/Footer";
 import Link from "next/link";
 
-export default function Blog({posts}) {
+export default function Blog({ posts }) {
 
     const [categories, setCategories] = useState([]);
 
@@ -51,8 +51,7 @@ export default function Blog({posts}) {
                             <div className="blog-posts">
                                 {  
                                     posts.map(frontMatter => 
-                                        <BlogCard key={frontMatter.title} {...frontMatter}
-                                    />)
+                                        <BlogCard frontMatter={frontMatter} key={frontMatter.title}/>)
                                 }
                             </div>
                         </div>
@@ -83,5 +82,5 @@ export default function Blog({posts}) {
 export async function getStaticProps() {
     const posts = await getAllFilesFrontMatter("blog");
 
-    return { props : { posts } }
+    return { props : { posts }}
 }
