@@ -94,10 +94,14 @@
 
 .blog-layout-title-info > svg {
     margin-right: 10px;
-    fill: var(--text);
+    fill: var(--color-path);
 }
 
 .blog-layout-date, .blog-layout-read-time{
     font-family: "Wotfard-Regular";
     color: var(--text-gray);
+}
+
+.blog-layout-title-info:nth-child(4) {
+    transform: translateX(-1px);
 }
