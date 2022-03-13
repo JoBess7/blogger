@@ -44,6 +44,6 @@ export async function getStaticProps({ params }) {
             post,
             DBData
         },
-        revalidate: 180
+        revalidate: 30
     };
 }
