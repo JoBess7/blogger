@@ -5,7 +5,7 @@ export class PostRepository {
     static async postLikeEvent(slug) {
         const client = await clientPromise;
         const db = client.db("blog");
-    
+        
         return new Promise(function(resolve, reject) {
             db.collection("posts").updateOne({route: slug}, {$inc: {
                 views: 1
@@ -17,10 +17,10 @@ export class PostRepository {
     }
 
     static async getAllPosts() {
-        const client = await clientPromise;
-        const db = client.db("blog");
-    
-        return new Promise(function(resolve, reject) {
+        return new Promise(async function(resolve, reject) {
+            const client = await clientPromise;
+            const db = client.db("blog");
+        
             db.collection("posts").find({}).toArray().then(res => {
                 resolve(res);
             });

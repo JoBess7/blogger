@@ -2,7 +2,6 @@ import Header from "../../components/header/Header"
 import TableOfContents from "../../components/tableOfContents/TableOfContents"
 import { getFormattedDate } from "../../utils/date/date";
 import { AiOutlineEye } from "react-icons/ai"; 
-import { useEffect, useState } from "react";
 
 export default function BlogLayout({frontMatter, DBData, children}) {
 

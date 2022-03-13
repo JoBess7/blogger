@@ -7,8 +7,14 @@ import { useEffect, useState } from "react";
 export default function Blog({ mdxSource, frontMatter }) {
 
     useEffect(() => {
-        fetch(`/api/blog/posts/likes/${frontMatter.slug}`, {
-            method: 'POST'
+        fetch(`/api/blog/posts/views`, {
+            method: 'POST',
+            body: JSON.stringify({
+                slug: frontMatter.slug
+            }),
+            headers: new Headers({
+                "Content-Type": "application/json"
+            })
         })
         .then(res => res.json())
         .then(data => console.log(data));
