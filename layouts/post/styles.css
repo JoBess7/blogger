@@ -87,6 +87,10 @@
     margin-bottom: 4px;
 }
 
+.blog-layout-title-info span {
+    padding-top: 3px;
+}
+
 .blog-layout-title-info:nth-child(2) {
     margin-top: 10px;
     margin-bottom: 5px;

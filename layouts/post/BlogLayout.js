@@ -1,12 +1,26 @@
 import Header from "../../components/header/Header"
 import TableOfContents from "../../components/tableOfContents/TableOfContents"
 import { getFormattedDate } from "../../utils/date/date";
-import { AiOutlineEye } from "react-icons/ai";
 import { BsCalendarCheck, BsClockHistory } from "react-icons/bs";
 import { RiEye2Line } from "react-icons/ri";
+import { useEffect } from "react";
 
 export default function BlogLayout({frontMatter, DBData, children}) {
 
+    useEffect(() => {
+        fetch(`/api/blog/posts/views`, {
+            method: 'POST',
+            body: JSON.stringify({
+                slug: frontMatter.slug
+            }),
+            headers: new Headers({
+                "Content-Type": "application/json"
+            })
+        })
+        .then(res => res.json())
+        .then(data => {console.log(data)});
+    }, [frontMatter.slug]);
+    
     return (
         <div className="blog-layout">
             <div className="blog-layout-top-container td">

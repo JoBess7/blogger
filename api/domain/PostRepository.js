@@ -16,12 +16,12 @@ export class PostRepository {
         })
     }
 
-    static async getAllPosts() {
+    static async getPostBySlug(slug) {
         return new Promise(async function(resolve, reject) {
             const client = await clientPromise;
             const db = client.db("blog");
         
-            db.collection("posts").find({}).toArray().then(res => {
+            db.collection("posts").findOne({route: slug}).then(res => {
                 resolve(res);
             });
         })
