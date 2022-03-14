@@ -18,7 +18,7 @@ export default function BlogLayout({frontMatter, DBData, children}) {
             })
         })
         .then(res => res.json())
-        .then(data => {console.log(data)});
+        .then(data => {});
     }, [frontMatter.slug]);
     
     return (

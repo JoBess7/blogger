@@ -43,3 +43,8 @@
     text-transform: uppercase;
     font-family: "Wotfard-Medium";
 }
+
+.toc-active {
+    color: var(--color-dark-blue);
+    font-weight: bold;
+}
