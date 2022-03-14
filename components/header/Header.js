@@ -30,11 +30,11 @@ export default function Header() {
                 <div className="header-burger-container">
                     <div className="header-burger-links">
                         <Link href="/blog/posts">
-                            <a className={`h-link burger-link`}>Posts</a>
+                            <a onClick={() => burgerClickEvent()} className={`h-link burger-link`}>Posts</a>
                         </Link>
 
                         <Link href="/goodies">
-                            <a className={`h-link burger-link`}>Goodies</a>
+                            <a onClick={() => burgerClickEvent()} className={`h-link burger-link`}>Goodies</a>
                         </Link>
 
                         <a href="https://jobess7.com" className={`h-link burger-link`}>About</a>
