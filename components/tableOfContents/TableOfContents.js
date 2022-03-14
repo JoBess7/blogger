@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 export default function TableOfContents({ content }) {
 
     const [currentSection, setCurrentSection] = useState();
-    const [sections, setSections] = useState({});
-    
+    const [highlightables, setHighlightables] = useState([]);
+
     const callback = (entries) => {
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
@@ -14,19 +14,20 @@ export default function TableOfContents({ content }) {
     };
     
     useEffect(() => {
-        const highlightables = Array.from(document.getElementsByClassName("highlightable-section"));
+        setHighlightables(Array.from(document.getElementsByClassName("highlightable-section")));
 
         let options = {
+            root: document.querySelector("null"),
             rootMargin: '0px',
             threshold: 0
-          }
+        }
 
+        console.log("run");
         const observer = new IntersectionObserver(callback, options);
 
         highlightables.map(element => {
             observer.observe(document.getElementById(element.id));
         })
-
     }, []);
 
     const scrollIntoView = element => {
@@ -34,7 +35,6 @@ export default function TableOfContents({ content }) {
             behavior: "smooth"
         })
     };
-
 
     return (
         <div className="table-of-contents">
