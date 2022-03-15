@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useRef, useState } from "react"
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from "react"
+import { scrollIntoView } from "../../utils/funcs";
 
 export default function TableOfContents({ content }) {
 
     const [currentSection, setCurrentSection] = useState();
-    const [highlightables, setHighlightables] = useState([]);
 
     const callback = (entries) => {
         entries.forEach((entry) => {
@@ -14,7 +15,7 @@ export default function TableOfContents({ content }) {
     };
     
     useEffect(() => {
-        setHighlightables(Array.from(document.getElementsByClassName("highlightable-section")));
+        const highlightables = Array.from(document.getElementsByClassName("highlightable-section"));
 
         let options = {
             root: document.querySelector("null"),
@@ -28,13 +29,7 @@ export default function TableOfContents({ content }) {
         highlightables.map(element => {
             observer.observe(document.getElementById(element.id));
         })
-    }, []);
-
-    const scrollIntoView = element => {
-        document.getElementById(element).scrollIntoView({
-            behavior: "smooth"
-        })
-    };
+    }, [callback]);
 
     return (
         <div className="table-of-contents">

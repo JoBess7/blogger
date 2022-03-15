@@ -7,6 +7,7 @@ import HTML from "../prism/HTML";
 import Link from "next/link";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import { scrollIntoView } from "../../utils/funcs";
 
 const PostParagraph = ({ children }) => {
     return (
@@ -69,13 +70,6 @@ const SoloImage = ({ image, dimensions, alt }) => {
 };
 
 const Section = ({ title, id }) => {
-
-    const scrollIntoView = element => {
-        document.getElementById(element).scrollIntoView({
-            behavior: "smooth"
-        })
-    };
-
     return (
         <div id={id} className="section highlightable-section">
             <span>{title}</span>
@@ -85,13 +79,6 @@ const Section = ({ title, id }) => {
 };
 
 const Subsection = ({ title, id }) => {
-
-    const scrollIntoView = element => {
-        document.getElementById(element).scrollIntoView({
-            behavior: "smooth"
-        })
-    };
-
     return (
         <div id={id} className="subsection highlightable-section">
             <span>{title}</span>
