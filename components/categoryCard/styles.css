@@ -5,7 +5,7 @@
     flex-direction: column;
     border-radius: 5px;
     background-color: var(--color-card);
-    transition: box-shadow 200ms;
+    transition: box-shadow 100ms;
 }
 
 .post-types-post:hover {

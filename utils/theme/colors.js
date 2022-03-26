@@ -202,6 +202,9 @@ const CSSColors = [
     },
     {
         '--shadow-light-mode': ['rgba(149, 157, 165, 0.2) 0px 8px 24px', 'rgba(1,1,1,0)']
+    },
+    {
+        '--toc-border': ['rgb(219, 219, 219)', 'rgb(177, 174, 174)']
     }
 ];
 

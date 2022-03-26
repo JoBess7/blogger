@@ -9,7 +9,7 @@
 
 .post-paragraph {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* ----------------------------------- */
@@ -123,6 +123,7 @@
 
 .solo-image {
     height: 400px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -141,11 +142,12 @@
     font-size: 35px;
     white-space: nowrap;
     font-family: "Wotfard-Medium";
+    color: var(--text);
 }
 
 .section svg {
     margin: 0 !important;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     fill: var(--color-dark-blue);
     left: -32px;
@@ -171,13 +173,14 @@
 
 .subsection span {
     font-size: 23px;
+    color: var(--text);
     white-space: nowrap;
     font-family: "Wotfard-Medium";
 }
 
 .subsection svg {
     margin: 0 !important;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     fill: var(--color-dark-blue);
     left: -25px;
@@ -191,3 +194,13 @@
 }
 
 /* ---------------------------------- */
+
+.options {
+    font-size: 17px;
+    font-family: "Wotfard-Regular";
+    color: var(--text);
+}
+
+.options li {
+    margin-bottom: 20px;
+}

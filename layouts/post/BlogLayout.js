@@ -17,8 +17,6 @@ export default function BlogLayout({frontMatter, DBData, children}) {
                 "Content-Type": "application/json"
             })
         })
-        .then(res => res.json())
-        .then(data => {});
     }, [frontMatter.slug]);
     
     return (

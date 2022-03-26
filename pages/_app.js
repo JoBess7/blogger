@@ -18,6 +18,7 @@ import "../components/blogCard/styles.css";
 import "../components/footer/styles.css";
 import "../components/categoryCard/styles.css";
 import "../components/tableOfContents/styles.css";
+import "../components/dicebearAvatarGenerator/styles.css";
 
 import "../styles/_queries.css";
 

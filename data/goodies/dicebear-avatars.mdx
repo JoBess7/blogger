@@ -1,0 +1,48 @@
+---
+title: "DiceBear Avatars"
+publishedAt: "2022-03-26"
+description: "An avatar library for designers and developpers."
+---
+
+If you've been here a while, you've most likely seen this guy:
+
+<SoloImage
+image="characterSmileEyesOpen.svg"
+alt="CharacterEyesOpen"
+dimensions={250}
+/>
+
+I got him from <Lk url="https://avatars.dicebear.com">DiceBear Avatars</Lk>, an avatar library for designers and developpers.
+When using DiceBear, you can either:
+
+<Options>
+    <li>Customize and download SVGs from their <Lk url="https://avatars.dicebear.com">home page</Lk></li>
+    <li>Use their API to generate SVGs within your code</li>
+</Options>
+
+With the second option, you can dynamically generate random avatars in 10 different styles. Try it out yourself!
+
+<DicebearAvatarGenerator/>
+
+Here's the snippet:
+
+<JavaScript>
+{`import Image from "next/image";
+import { useState } from "react";
+import uuid from 'react-uuid';\n
+export function DicebearAvatarGenerator() {
+    const [type, setType] = useState("micah");
+    const [seed, setSeed] = useState(uuid());\n
+    const types = ["adventurer", "adventurer-neutral", "avataaars", "big-ears", "big-ears-neutral", "big-smile", "bottts", "croodles", "croodles-neutral", "identicon", "initials", "micah", "miniavs", "open-peeps", "personas", "pixel-art", "pixel-art-neutral"];\n
+    const randomize = () => {
+        setType(types[Math.floor(Math.random() * types.length)]);
+        setSeed(uuid());
+    }\n
+    return (
+        <div className="dicebear-avatars">
+            <button onClick={randomize}>Show me something else!</button>
+            <Image width={300} height={300} alt="my-avatar" src={\`https://avatars.dicebear.com/api/\${type}/\${seed}.svg\`}></Image>
+        </div>
+    )
+}`}
+</JavaScript>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { scrollIntoView } from "../../utils/funcs";
 
 export default function TableOfContents({ content }) {
-
+    
     const [currentSection, setCurrentSection] = useState();
 
     const callback = (entries) => {
@@ -23,7 +23,6 @@ export default function TableOfContents({ content }) {
             threshold: 0
         }
 
-        console.log("run");
         const observer = new IntersectionObserver(callback, options);
 
         highlightables.map(element => {

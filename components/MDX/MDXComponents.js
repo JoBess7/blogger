@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { scrollIntoView } from "../../utils/funcs";
+import { DicebearAvatarGenerator } from "../dicebearAvatarGenerator/DicebearAvatarGenerator";
 
 const PostParagraph = ({ children }) => {
     return (
@@ -72,7 +73,7 @@ const SoloImage = ({ image, dimensions, alt }) => {
 const Section = ({ title, id }) => {
     return (
         <div id={id} className="section highlightable-section">
-            <span>{title}</span>
+            <span className="td">{title}</span>
             <AiOutlineNumber onClick={() => scrollIntoView(id)} size={30}/>
         </div>
     )
@@ -81,9 +82,17 @@ const Section = ({ title, id }) => {
 const Subsection = ({ title, id }) => {
     return (
         <div id={id} className="subsection highlightable-section">
-            <span>{title}</span>
+            <span className="td">{title}</span>
             <AiOutlineNumber onClick={() => scrollIntoView(id)} size={22}/>
         </div>
+    )
+};
+
+const Options = ({ children }) => {
+    return (
+        <ul className="options">
+            {children}
+        </ul>
     )
 };
 
@@ -100,7 +109,9 @@ const MDXComponents = {
     Lk: props => <Lk {...props}></Lk>,
     SoloImage: props => <SoloImage {...props}></SoloImage>,
     Section: props => <Section {...props}></Section>,
-    Subsection: props => <Subsection {...props}></Subsection>
+    Subsection: props => <Subsection {...props}></Subsection>,
+    Options: props => <Options {...props}></Options>,
+    DicebearAvatarGenerator: props => <DicebearAvatarGenerator {...props}></DicebearAvatarGenerator>
 }
 
 export default MDXComponents

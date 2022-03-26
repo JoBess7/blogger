@@ -1,11 +1,11 @@
 ---
-title: "Test post second"
+title: "Designing a 4pod.js"
 publishedAt: "2021-03-22"
 summary: "Qui drumstick esse alcatra incididunt shankle in laboris tempor. Velit laborum pork belly boudin frankfurter aliqua consequat filet mignon. Ex aute mollit, tenderloin incididunt brisket do fatback boudin. Beef ribs strip steak consequat, pork loin boudin pork chop sint est."
 category: "CSS"
 subcategories: []
 tableOfContents:
-  Content top:
+  Contentop:
     - targets:
         CT1: id1
         CT2: id2
@@ -27,16 +27,3 @@ The feeling can be quite annoying, but if users will land there anyway, why not 
     you can simply create a new file called<it> _error.js </it>
     under the <it>pages</it> folder and customize it all you want.
 </TipGreen>
-
-<JavaScript>
-{`import "../styles/_queries.css";
-import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
-import { useContext } from "react";
-import { ThemeContext } from "@emotion/react";\n
-function MyApp({ Component, pageProps }) {
-	return (
-        <ThemeProvider>
-            <Component {...pageProps} />
-        </ThemeProvider>
-)}`}
-</JavaScript>
