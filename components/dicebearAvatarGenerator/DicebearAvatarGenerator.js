@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import uuid from 'react-uuid'
+import ThreeDButton from "../threeDButton/ThreeDButton";
 
 export function DicebearAvatarGenerator() {
     const [type, setType] = useState("micah");
@@ -15,13 +16,7 @@ export function DicebearAvatarGenerator() {
 
     return (
         <div className="dicebear-avatars">
-            <button onClick={randomize} className="button-82-pushable" role="button">
-                <span className="button-82-shadow"></span>
-                <span className="button-82-edge"></span>
-                <span className="button-82-front text">
-                    Show me something else!
-                </span>
-            </button>
+            <ThreeDButton action={randomize} text="Show me something else!"/>
             <Image width={300} height={300} alt="" src={`https://avatars.dicebear.com/api/${type}/${seed}.svg`}></Image>
         </div>
     )

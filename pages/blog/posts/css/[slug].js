@@ -7,14 +7,13 @@ import { PostRepository } from "../../../../api/domain/PostRepository";
 export default function Blog({ post, DBData }) {
 
     const {frontMatter, mdxSource} = post;
-    DBData = JSON.parse(DBData);
 
     const content = hydrate(mdxSource, {
         components: MDXComponents
     })
 
     return (
-        <BlogLayout DBData={DBData} frontMatter={frontMatter}>
+        <BlogLayout DBData={JSON.parse(DBData)} frontMatter={frontMatter}>
             {content}
         </BlogLayout>
     )

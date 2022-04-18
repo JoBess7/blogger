@@ -16,7 +16,6 @@
     "@dicebear/avatars-male-sprites": "^4.10.2",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
-    "@hapi/boom": "^9.1.4",
     "date-fns": "^2.16.1",
     "framer-motion": "^3.2.1",
     "gray-matter": "^4.0.3",

@@ -2,7 +2,7 @@ import { PostNotFoundError } from "../exceptions/PostNotFoundError";
 import clientPromise from "../factory";
 
 export class PostRepository {
-    static async postLikeEvent(slug) {
+    static async postViewEvent(slug) {
         return new Promise(async function(resolve, reject) {
             const client = await clientPromise;
             const db = client.db("blog");
