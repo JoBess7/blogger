@@ -15,6 +15,7 @@ import "../components/MDX/styles.css";
 import "../components/prism/prism.css";
 import "../components/header/styles.css";
 import "../components/footer/styles.css";
+import "../components/codepen/styles.css";
 import "../components/blogCard/styles.css";
 import "../components/threeDButton/styles.css";
 import "../components/categoryCard/styles.css";

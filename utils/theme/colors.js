@@ -105,7 +105,7 @@ const CSSColors = [
         '--prism-base': ['#25414e', '#f8f8f2']
     },
     {
-        '--prism-background': ['#f6f3f3', '#172028']
+        '--prism-background': ['#eeeff1', '#172028']
     },
     {
         '--prism-comment': ['#aabfc9', '#8292a2']
@@ -205,6 +205,9 @@ const CSSColors = [
     },
     {
         '--toc-border': ['rgb(219, 219, 219)', 'rgb(177, 174, 174)']
+    }, 
+    {
+        '--playground-top': ['rgb(223, 223, 223)', 'rgb(32, 40, 48)']    
     }
 ];
 

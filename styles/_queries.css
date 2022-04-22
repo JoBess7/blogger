@@ -39,3 +39,10 @@ and (max-width: 650px) {
     .fof-message {font-size: 40px;}
     .fof-left-flex button {font-size: 22px;}
 }
+
+@media screen 
+and (max-width: 720px) {
+    .codepen-display {flex-direction: column;}
+    .codepen-results {width: 100%;}
+    .codepen-editors {width: 100% !important;}
+}

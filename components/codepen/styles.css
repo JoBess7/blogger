@@ -1,0 +1,90 @@
+.codepen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.codepen-title {
+    text-transform: capitalize;
+    width: 100%;
+    font-family: "Wotfard-Medium";
+    padding: 10px;
+    color: white;
+    background-color: rgb(32, 40, 48);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.codepen-editors {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+}
+
+.codepen-editor-picker button {
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 10px;
+    font-weight: normal;
+    font-family: "Wotfard-Regular";
+    border: none;
+    color: rgb(161, 160, 160);
+    transition: color .1s;
+    font-size: 17px;
+}
+
+.codepen-editor-picker .codepen-title-selected {
+    font-family: "Wotfard-Regular";
+    font-weight: bold;
+    color: white;
+}
+
+.codepen-editor {
+    letter-spacing: 1px;
+    font-family: "Wotfard-Regular" !important;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.codepen-display {
+    background-color: var(--prism-background);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.codepen-textareas {
+    padding: 10px;
+}
+
+.codepen-results {
+    width: 55%;
+}
+
+.codepen-results-title {
+    width: 100%;
+    font-weight: normal;
+    font-family: "Wotfard-Medium";
+    font-size: 17px;
+    padding: 10px 10px 10px 0px;
+    color: white;
+}
+
+.codepen-iframe-container {
+    padding: 0 10px 10px 0px;
+}
+
+.codepen-iframe-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid var(--text);
+}
+
+.codepen-editor div textarea {
+    outline:  none;
+}

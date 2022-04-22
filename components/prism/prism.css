@@ -3,14 +3,15 @@ code[class*='language-'],
 pre[class*='language-'] {
     color: var(--prism-base);
     background: none;
-    font-family: Roboto Mono, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 15px;
+    font-family: "Wotfard-Regular" !important;
+    letter-spacing: 1px;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
+    background: var(--prism-background) !important;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -181,10 +182,6 @@ pre[class*='language-'] {
 pre {
     border-radius: 5px;
     margin: 0 !important;
-}
-
-code {
-   
 }
 
 code span {
