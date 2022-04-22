@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { BsCheckCircle } from "react-icons/bs";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { AiOutlineNumber } from "react-icons/ai";
@@ -5,8 +6,7 @@ import JavaScript from "../prism/JavaScript";
 import CSS from "../prism/CSS";
 import HTML from "../prism/HTML";
 import Link from "next/link";
-import Image from "next/image";
-import { useInView } from "react-intersection-observer";
+import Codepen from "../codepen/Codepen";
 import { scrollIntoView } from "../../utils/funcs";
 import { DicebearAvatarGenerator } from "../dicebearAvatarGenerator/DicebearAvatarGenerator";
 
@@ -59,10 +59,9 @@ const Lk = ({ children, url }) => {
 
 const SoloImage = ({ image, dimensions, alt }) => {
     return (
-        <div style={{height: `${dimensions}px`}} className="solo-image">
-            <Image
-                layout="fill"
-                objectFit='contain' 
+        <div className="solo-image">
+            {/* next.js doesn't support height: auto, must use img tag in this case */}
+            <img
                 alt={alt}
                 src={`/images/${image}`}
             />
@@ -97,21 +96,29 @@ const Options = ({ children }) => {
 };
 
 
+const FolderText = ({ text }) => {
+    return (
+        <span className="folder-text">{text}</span>
+    )
+};
+
 const MDXComponents = {
     h1: props => <h1 {...props}></h1>,
-    p: props => <PostParagraph {...props}></PostParagraph>,
-    TipGreen: props => <TipGreen {...props}></TipGreen>,
-    TipBlue: props => <TipBlue {...props}></TipBlue>,
+    p: props => <PostParagraph {...props}/>,
+    TipGreen: props => <TipGreen {...props}/>,
+    TipBlue: props => <TipBlue {...props}/>,
     it: props => <span className="italic" {...props}></span>,
-    JavaScript: props => <JavaScript {...props}></JavaScript>,
-    CSS: props => <CSS {...props}></CSS>,
-    HTML: props => <HTML {...props}></HTML>,
-    Lk: props => <Lk {...props}></Lk>,
-    SoloImage: props => <SoloImage {...props}></SoloImage>,
-    Section: props => <Section {...props}></Section>,
-    Subsection: props => <Subsection {...props}></Subsection>,
-    Options: props => <Options {...props}></Options>,
-    DicebearAvatarGenerator: props => <DicebearAvatarGenerator {...props}></DicebearAvatarGenerator>
+    JavaScript: props => <JavaScript {...props}/>,
+    CSS: props => <CSS {...props}/>,
+    HTML: props => <HTML {...props}/>,
+    Lk: props => <Lk {...props}/>,
+    SoloImage: props => <SoloImage {...props}/>,
+    Section: props => <Section {...props}/>,
+    Subsection: props => <Subsection {...props}/>,
+    Options: props => <Options {...props}/>,
+    DicebearAvatarGenerator: props => <DicebearAvatarGenerator {...props}/>,
+    FolderText: props => <FolderText {...props}/>,
+    Codepen: props => <Codepen {...props}/>
 }
 
 export default MDXComponents

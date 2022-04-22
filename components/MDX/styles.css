@@ -122,9 +122,18 @@
 /* ---------------------------------- */
 
 .solo-image {
-    height: 400px;
     margin-bottom: 40px;
     position: relative;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: var(--shadow1);
+}
+
+.solo-image img {
+    height: auto;
+    border-radius: 7px;
+    width: 100%;
+    display: block;
 }
 
 /* ---------------------------------- */
@@ -204,3 +213,14 @@
 .options li {
     margin-bottom: 20px;
 }
+
+/* ---------------------------------- */
+
+.folder-text {
+    font-family: "Wotfard-Regular";
+    border-radius: 3px;
+    padding: 5px;
+    background-color: var(--prism-background);
+}
+
+/* ---------------------------------- */

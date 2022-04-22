@@ -28,7 +28,9 @@ export default function TableOfContents({ content }) {
         highlightables.map(element => {
             observer.observe(document.getElementById(element.id));
         })
-    }, [callback]);
+
+        console.log("hello")
+    }, []);
 
     return (
         <div className="table-of-contents">

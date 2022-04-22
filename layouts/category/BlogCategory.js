@@ -24,7 +24,7 @@ export default function BlogCategory({ category, posts }) {
                 return "CSS";
             case "react":
                 return "React";
-            case "next":
+            case "next.js":
                 return "Next.js";
             case "animation":
                 return "Animation"

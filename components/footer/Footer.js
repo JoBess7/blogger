@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BsDot, BsGithub } from "react-icons/bs";
 import { AiFillCodepenCircle } from "react-icons/ai";
-import { HiOutlineMail } from "react-icons/hi";
 
 export default function Footer() {
     return (

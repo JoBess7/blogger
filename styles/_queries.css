@@ -39,8 +39,3 @@ and (max-width: 650px) {
     .fof-message {font-size: 40px;}
     .fof-left-flex button {font-size: 22px;}
 }
-
-@media screen 
-and (max-width: 500px) {
-    .solo-image {height: 270px !important;}
-}

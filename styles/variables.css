@@ -35,9 +35,10 @@
     --tip-blue-background: rgba(188, 224, 253, 0.541);
     --shadow-light-mode: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     --toc-border: rgb(219, 219, 219);
+    --color-folder-text: hsl(225deg, 16%, 90%);
 
     --prism-base: #25414e;
-    --prism-background: #f6f3f3;
+    --prism-background: #f1f1f1;
     --prism-comment: #aabfc9;
     --prism-prolog: #aabfc9;
     --prism-doctype: #aabfc9;
