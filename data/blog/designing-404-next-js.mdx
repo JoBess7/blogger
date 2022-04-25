@@ -34,7 +34,43 @@ and we'll have a simple button redirecting us to our previous location. Let's ge
 
 <Section title="Introduction to radial gradients" id="Introduction to radial gradients"/>
 
-I'm sure you've heard of linear-gradients before.
+I'm sure you've heard of linear-gradients before. They're defined by at least two colors and a 
+direction as first argument <i>(which is optional)</i>. Let's generate a simple gradient that starts from the bottom left corner
+with three colors: red, yellow and blue.
+
+<Codepen 
+_HTML={
+`<div></div>`}
+_CSS={
+`div {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, yellow, blue);
+}`}
+_initial="CSS"
+/>
+
+If no direction is specified, the default transition is top to bottom. All of this
+is great, but let's take it to the next level. What if we want our gradient to start from the center?
+That's where radial-gradients come in. A radial-gradient is defined by:
+
+<Options>
+    <li><b>Shape</b>: an ellipse or a circle</li>
+    <li><b>Colors</b>: at least two colors</li>
+</Options>
+
+<Codepen 
+_HTML={
+`<div></div>`}
+_CSS={
+`div {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+}`}
+_initial="CSS"
+/>
+
 
 <Section title="Getting set up" id="Getting set up"/>
 
@@ -46,20 +82,6 @@ Under the <FolderText text="pages"/> folder, create a new file called <FolderTex
 </TipBlue>
 
 <Subsection title="My small section" id="id1"/>
-
-<Codepen 
-_HTML={
-`<div>
-    hello
-</div>`}
-_CSS={
-`.x {
-    font-size: 45px;
-}`}
-_JS={
-`function add(a, b) {\n  return a + b;\n}`}
-/>
-
 
 <JavaScript>
 {`import "../styles/_queries.css";

@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs";
 import uuid from 'react-uuid'
+import { BsArrowCounterclockwise } from "react-icons/bs";
 
-export default function Codepen({ _HTML, _CSS, _JS }) {
-    const [HTML, setHTML] = useState(_HTML);
-    const [CSS, setCSS] = useState(_CSS);
-    const [JS, setJS] = useState(_JS);
+export default function Codepen({ _HTML, _CSS, _JS, _initial }) {
+    const [HTML, setHTML] = useState(_HTML ? _HTML : '');
+    const [CSS, setCSS] = useState(_CSS ? _CSS : '');
+    const [JS, setJS] = useState(_JS ? _JS : '');
 
-    const [selected, setSelected] = useState("HTML");
+    const [selected, setSelected] = useState(_initial ? _initial : 'HTML');
 
     const [iFrame, setIFrame] = useState(null);
     const [iFrameId, setIFrameId] = useState(uuid());
@@ -16,24 +17,42 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
     useEffect(() => {
         if(document) {
             let frame = document.getElementById("codepen-iframe-" + iFrameId).contentWindow.document;
+
             setIFrame(frame);
             writeInFrame(frame, HTML, CSS, JS);
         }
     }, []);
 
-    const writeInFrame = (frame, HTML, CSS, JS) => {
-        frame.open()
-        frame.writeln(
-                HTML   +
-            '<style>'     +
-                CSS    +
-            '</style>'    +
-            '<script>'    +
-                JS     +
-            '</script>'
+    const resetIFrame = () => {
+        let resetButton = document.getElementById("codepen-reset-" + iFrameId);
 
-        )
-        frame.close()
+        resetButton.classList.add("codepen-reset-active");
+        setTimeout(() => {
+            resetButton.classList.remove("codepen-reset-active");
+        }, 400);
+
+        setHTML(_HTML ? _HTML : '');
+        setCSS(_CSS ? _CSS : '');
+        setJS(_JS ? _JS : '');
+
+        writeInFrame(iFrame, _HTML, _CSS, _JS);
+    };
+
+    const writeInFrame = (frame, HTML, CSS, JS) => {
+        try {
+            frame.open()
+            frame.writeln(
+                    HTML   +
+                '<style>'     +
+                    CSS    +
+                '</style>'    +
+                '<script>'    +
+                    JS     +
+                '</script>'
+    
+            )
+            frame.close()
+        } catch {}
     };
 
     const updateTextArea = (type, val) => {
@@ -51,16 +70,25 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
 
     return (
         <div className="codepen">
-            <span className="codepen-title">
-                Code playground
-            </span>
+
+            <div className="codepen-title-flex">
+                <span className="codepen-title td">
+                    Code playground
+                </span>
+                <BsArrowCounterclockwise 
+                    id={"codepen-reset-" + iFrameId} 
+                    title="Reset code" 
+                    onClick={resetIFrame} 
+                    className="codepen-reset" 
+                    size={23}/>
+            </div>
 
             <div className="codepen-display">
                 <div className="codepen-editors">
-                    <div className="codepen-editor-picker">
+                    <div className="codepen-editor-picker td">
                         {
                             <button 
-                            className={`${selected === "HTML" ? "codepen-title-selected " : ""}`}
+                            className={`td ${selected === "HTML" ? "codepen-title-selected " : ""}`}
                             onClick={() => setSelected("HTML")}
                             >
                                 HTML
@@ -69,7 +97,7 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
 
                         {
                             <button 
-                            className={`${selected === "CSS" ? "codepen-title-selected " : ""}`}
+                            className={`td ${selected === "CSS" ? "codepen-title-selected " : ""}`}
                             onClick={() => setSelected("CSS")}
                             >
                                 CSS
@@ -78,15 +106,15 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
 
                         {
                             <button 
-                            className={`${selected === "JS" ? "codepen-title-selected " : ""}`}
+                            className={`td ${selected === "JS" ? "codepen-title-selected " : ""}`}
                             onClick={() => setSelected("JS")}
                             >
                                 JS
                             </button>
                         }
                     </div>
-                    <div className="codepen-textareas">
-                        <div className="codepen-editor">
+                    <div className="codepen-textareas td">
+                        <div className="codepen-editor td">
                             {
                                 selected === "CSS" &&
                                 <Editor
@@ -97,7 +125,7 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
                             }
                         </div>
 
-                        <div className="codepen-editor">
+                        <div className="codepen-editor td">
                             {
                                 selected === "HTML" &&
                                 <Editor
@@ -108,7 +136,7 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
                             }
                         </div>
 
-                        <div className="codepen-editor">
+                        <div className="codepen-editor td">
                             {
                                 selected === "JS" &&
                                 <Editor
@@ -120,11 +148,11 @@ export default function Codepen({ _HTML, _CSS, _JS }) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="codepen-results">
-                    <div className="codepen-results-title">Results</div>
-                    <div className="codepen-iframe-container">
-                        <iframe id={"codepen-iframe-" + iFrameId}></iframe>
+                    <div className="codepen-results-title td">Results</div>
+                    <div className="codepen-iframe-container td">
+                        <iframe marginWidth="0" marginHeight="0" className="td" id={"codepen-iframe-" + iFrameId}></iframe>
                     </div>
                 </div>
             </div>

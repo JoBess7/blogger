@@ -7,41 +7,67 @@
 
 .codepen-title {
     text-transform: capitalize;
-    width: 100%;
     font-family: "Wotfard-Medium";
-    padding: 10px;
-    color: white;
-    background-color: rgb(32, 40, 48);
+    font-size: 15px;
+    color: var(--color-gray-600);
+}
+
+.codepen-reset {
+    cursor: pointer;
+    transition: transform .1s;
+    fill: var(--color-gray-600);
+}
+
+.codepen-reset-active {
+    animation: animateReset .4s ease-in-out;
+}
+
+@keyframes animateReset {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+.codepen-reset:hover {
+    transform: scale(1.1);
+}
+
+.codepen-title-flex {
+    padding: 5px 10px;
+    background-color: var(--playground-top);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .codepen-editors {
     display: flex;
-    width: 45%;
     flex-direction: column;
+    width: 45%;
 }
 
 .codepen-editor-picker button {
     background: none;
     cursor: pointer;
     margin-right: 5px;
-    padding: 10px;
+    padding: 10px 4px 10px 10px;
     font-weight: normal;
     font-family: "Wotfard-Regular";
     border: none;
-    color: rgb(161, 160, 160);
+    color: var(--color-gray-500);
     transition: color .1s;
     font-size: 17px;
 }
 
 .codepen-editor-picker .codepen-title-selected {
-    font-family: "Wotfard-Regular";
-    font-weight: bold;
-    color: white;
+    font-family: "Wotfard-Medium";
+    color: var(--text);
 }
 
 .codepen-editor {
+    color: var(--text);
     letter-spacing: 1px;
     font-family: "Wotfard-Regular" !important;
     line-height: 22px;
@@ -65,12 +91,13 @@
 }
 
 .codepen-results-title {
+    text-transform: uppercase;
     width: 100%;
     font-weight: normal;
     font-family: "Wotfard-Medium";
     font-size: 17px;
     padding: 10px 10px 10px 0px;
-    color: white;
+    color: var(--text);
 }
 
 .codepen-iframe-container {
@@ -82,7 +109,7 @@
     border: none;
     border-radius: 5px;
     background-color: white;
-    border: 1px solid var(--text);
+    border: 1px solid var(--color-gray-500);
 }
 
 .codepen-editor div textarea {
