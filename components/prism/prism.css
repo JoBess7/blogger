@@ -3,7 +3,7 @@ code[class*='language-'],
 pre[class*='language-'] {
     color: var(--prism-base);
     background: none;
-    font-family: "Wotfard-Regular" !important;
+    font-family: "Wotfard-Medium" !important;
     letter-spacing: 1px;
     text-align: left;
     white-space: pre;

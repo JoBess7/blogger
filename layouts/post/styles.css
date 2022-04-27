@@ -33,7 +33,7 @@
 .blog-layout-top-flex {
     margin: 0px 40px 0 40px;
     box-sizing: border-box;
-    max-width: 1000px;
+    max-width: 1060px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1200px;
     box-sizing: border-box;
     padding: 0 40px 0 40px;
 }

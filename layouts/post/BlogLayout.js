@@ -4,6 +4,7 @@ import { getFormattedDate } from "../../utils/date/date";
 import { BsCalendarCheck, BsClockHistory } from "react-icons/bs";
 import { RiEye2Line } from "react-icons/ri";
 import { useEffect } from "react";
+import Footer from "../../components/footer/Footer";
 
 export default function BlogLayout({frontMatter, DBData, children}) {
 
@@ -71,6 +72,8 @@ export default function BlogLayout({frontMatter, DBData, children}) {
                     </div>
                 </div>
             </div>
+
+            <Footer/>
         </div>
     )
 }

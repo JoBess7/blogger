@@ -6,15 +6,11 @@ category: "next.js"
 subcategories: ["CSS"]
 tableOfContents:
   Introduction to radial-gradients:
-    - targets:
-        CM1: id1
-        CM2: id4
-  Getting set up:
     - targets: []
-  Content bottom:
+  Developping the page:
     - targets:
-        CB1: id5
-        CB2: id6
+        Getting set up: Getting set up
+        Page structure: Page structure
 ---
 
 You've most likely experienced this before: you click on a link, and Boom! 404, page not found!
@@ -32,7 +28,7 @@ dimensions={450}
 A very simple way of telling our users they shouldn't be here. The cursor will act as a flashlight 
 and we'll have a simple button redirecting us to our previous location. Let's get into it!
 
-<Section title="Introduction to radial gradients" id="Introduction to radial gradients"/>
+<Section title="Introduction to radial-gradients" id="Introduction to radial-gradients"/>
 
 I'm sure you've heard of linear-gradients before. They're defined by at least two colors and a 
 direction as first argument <i>(which is optional)</i>. Let's generate a simple gradient that starts from the bottom left corner
@@ -52,7 +48,7 @@ _initial="CSS"
 
 If no direction is specified, the default transition is top to bottom. All of this
 is great, but let's take it to the next level. What if we want our gradient to start from the center?
-That's where radial-gradients come in. A radial-gradient is defined by:
+That's where radial-gradients come in. At the minimum, a radial-gradient is defined by:
 
 <Options>
     <li><b>Shape</b>: an ellipse or a circle</li>
@@ -66,32 +62,35 @@ _CSS={
 `div {
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    background: radial-gradient(circle, blue 30px, red 100px);
 }`}
 _initial="CSS"
 />
 
+I won't get into details since there are many things you can do with radial-gradients. 
+And all you have to know for this tutorial is that they exist because we'll need them soon.
+But if you want to learn more, <Lk url="https://developer.mozilla.org/en-US/docs/web/css/gradient/radial-gradient#syntax">here's a good reference</Lk>.
 
-<Section title="Getting set up" id="Getting set up"/>
+<Section title="Developping the page" id="Developping the page"/>
 
-Under the <FolderText text="pages"/> folder, create a new file called <FolderText text="404.js"/>.
+<Subsection title="Getting set up" id="Getting set up"/>
+
+Let's actually start now. Under the <FolderText text="pages"/> folder, create a new file called <FolderText text="404.js"/>.
+Anytime a user will land on a non-existent page, our 404 page will be rendered.
+
 
 <TipBlue title="Dealing with error 500">
-    Next.js also provides a custom 500 page defined in the file <FolderText text="_error.js"/>.
-    The idea is the pretty much the same, but I won't be covering it.
+    If you want to deal with error 500, Next.js also provides a custom 500 page 
+    defined in the file <FolderText text="500.js"/>.
 </TipBlue>
 
-<Subsection title="My small section" id="id1"/>
+<Subsection title="Page structure" id="Page structure"/>
+
 
 <JavaScript>
-{`import "../styles/_queries.css";
-import { ThemeProvider } from "../components/themeProvider/ThemeProvider";
-import { useContext } from "react";
-import { ThemeContext } from "@emotion/react";\n
-function MyApp({ Component, pageProps }) {
-	return (
-        <ThemeProvider>
-            <Component {...pageProps} />
-        </ThemeProvider>
-)}`}
+{`export default function FourOhFour() {
+    return (
+        <div className="fof-container"></div>
+    )
+}`}
 </JavaScript>

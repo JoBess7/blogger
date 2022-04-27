@@ -19,11 +19,13 @@ and (max-width: 800px) {
 }
 
 @media screen
-and (max-width: 1010px) {
+and (max-width: 1250px) {
+    .post-paragraph, .section, .subsection {padding: 0;}
     .fof-message {font-size: 60px;}
     .blog-layout-table-container {display: none;}
     .blog-layout-actual-content {padding-right: 0;}
-    .blog-layout-content-sub {padding: 0 80px;}
+    .blog-layout-content-sub {padding: 0 80px; justify-content: center;}
+    .blog-layout-top-flex {max-width: 800px;}
 }
 
 @media screen 
@@ -44,5 +46,7 @@ and (max-width: 650px) {
 and (max-width: 720px) {
     .codepen-display {flex-direction: column;}
     .codepen-results {width: 100%;}
+    .codepen-results-title {padding: 0 10px;}
     .codepen-editors {width: 100% !important;}
+    .codepen-iframe-container {padding: 10px;}
 }
